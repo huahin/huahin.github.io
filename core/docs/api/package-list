@@ -1,4 +1,4 @@
-org.huahin.core
-org.huahin.core.io
-org.huahin.core.lib.partition
-org.huahin.core.util
+org.huahinframework.core
+org.huahinframework.core.io
+org.huahinframework.core.lib.partition
+org.huahinframework.core.util
