@@ -1,0 +1,7 @@
+org.huahinframework.core
+org.huahinframework.core.io
+org.huahinframework.core.lib.input
+org.huahinframework.core.lib.input.creator
+org.huahinframework.core.lib.partition
+org.huahinframework.core.util
+org.huahinframework.core.writer
