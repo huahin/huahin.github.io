@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <title>Huahin Framework</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  <head>
+
+  <body>
+    <div id="page">
+      <div id="head">
+        <h1>Huahin Framework</h1>
+      </div>
+
+      <!-- menu -->
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="core.html">Core</a></li>
+          <li><a href="unit.html">Unit</a></li>
+          <li><div id="currentmenu">Manager</div></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="examples.html">Examples</a></li>
+        </ul>
+      </div>
+
+      <!-- submenu -->
+      <div id="submenu">
+        <ul>
+          <li><a href="/huahin-manager/">Huahin Manager</a></li>
+        </ul>
+      </div>
+
+      <!-- main -->
+      <div id="main">
+        <!-- Huahin Manager -->
+        <h2>Huahin Manager</h2>
+        <p>Huahin Manager REST API is replaced with the Hadoop command in products for managing MapReduce Job.
+        It also has its own queue management and a different work queue of Hadoop.
+        If you select a scheduler in the Hadoop Fair Scheduler, you can limit the number of Job can run simultaneously.
+        The main function is as follows:</p>
+        <ul>
+          <li>Get job list.</li>
+          <li>Get job status.</li>
+          <li>Get job detail.</li>
+          <li>Kill job</li>
+          <li>Register job</li>
+          <li>Get queue list.</li>
+          <li>Get run queue statuses.</li>
+          <li>Kill queue for ID.</li>
+        </ul>
+        <p>Now supported are Apache Hadoop 0.20.x, 0.22.x, 1.0.x, distribution CDH3 of Cloudera, MapReduce Version 1 (MRv1).</p>
+        <p>Note that the package of Apache and Cloudera is different in each package.</p>
+        <p>EMR with respect to the registration of Job, with respect to queue management is not supported (not used).
+        Now, the execution of the Job (including continuous run), reference can be done in the EMR.
+        To Kill the Job will terminate the EMR itself.
+        For example, you must terminate the EMR if I start the Job by mistake, or wait for the end of the Job.
+        (Log in to the master that instance, you can Kill the Job)
+        You would in vain if you start the dozens,  would cause the cost.
+        Kill the Job You can use the REST API of Huahin Manager.</p>
+        <p>
+          For more information, see the following site.<br/>
+          <a href="/huahin-manager/">Huahin Manager</a>
+        </p>
+        <hr/>
+        <div class="note">
+          *2 Because there is a difference in the version of (*3) HDFS<br/>
+          *3 <a href="http://hadoop.apache.org/hdfs/" target="_blank" class="note">HDFS</a>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div id="foot">
+        <div class="tex">
+          <p>Copyright &copy; 2012 huahinframework.org</p>
+          <p>Contact <a href="mailto:huahin-framework@googlegroups.com">huahin-framework@googlegroups.com</a> and we’ll help you sort it out.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- google analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32923864-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

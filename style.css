@@ -1,73 +1,123 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body {
-  text-align: center;
+  background-color: #F5F5F5;
+  font-size: 95%;
   line-height: 150%;
-  font-size: 15px;
+  text-align: center;
   color: #333333;
-  margin:20px 0px 5px 0px;
-  background-color: #DCDCDC;
+  margin: 0px;
 }
-
-#out {
+div#page {
   text-align: left;
-  padding: 2px;
-  width:800px;
-  margin:auto auto auto auto;
-  background:#EFEFEF;
-  border-color:#CCCCCC;
-  border-width:1px;
-  border-style:solid;
+  border: 1px solid #333333;
+  background: #FFFFFF;
 }
-
-#head {
+div#head {
   text-align: left;
   margin:0 auto 0 auto;
-  background:#FAFAFA;
-  border-color:#CCCCCC;
-  border-width:1px 1px 1px 1px;
-  border-style:solid;
-  background-color: #000000;
+  background-color: #245386;
 }
-
 #head h1 {
   padding:30px;
   margin:0px;
   font-size:30px;
   color:#FFFFFF;
 }
-
-#main {
-  text-align: left;
-  padding: 15px 10px;
-  margin:2px auto 2px auto;
-  background:#FFFFFF;
-  border-color:#CCCCCC;
-  border-width:1px 1px 1px 1px;
-  border-style:solid;
-  height:3550px;
+div#menu {
+  height: 2em;
+  padding: 0.5em 0px 0px;
+  background: #245386;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
 }
-
-#block {
-  width:780px;
-  float:left;
-  padding:0;
+div#menu ul{
+  margin: 0px;
+  padding: 0px;
 }
-
-#block h2 {
-  color:#FFFFFF;
-  font-size:18px;
-  padding:5px 5px;
-  border-color:#CCCCCC;
-  border-width:1px;
-  border-style:solid;
-  margin: 0px 0px 5px 0px;
-  background-color: #000000;
+div#menu li{
+  float: left;
+  padding: 0px;
+  margin-left: 10px;
+  color: #FFFFFF;
+  list-style: none;
 }
-
-.tex {
-  line-height:170%;
-  padding:6px 3px 15px 20px;
+div#menu a{
+  color: #FFFFFF;
+  text-decoration: none;
 }
-
+div#menu a:hover{
+  color: #000000;
+  background: #D7E1EC;
+}
+div#currentmenu {
+  color: #000000;
+  background: #D7E1EC;
+}
+div#main {
+  margin: 0px;
+  border-left: 1px solid #CCCCCC;
+  padding: 20px 0px;
+  background: #FFFFFF;
+  width: 75%;
+  float: left;
+  border-right: 1px solid #CCCCCC;
+}
+div#main p {
+  margin: 0px 0px 20px 40px;
+}
+div#main ul {
+  margin-left: 60px;
+  margin-bottom: 1em;
+  margin-right: 30px;
+}
+div#submenu {
+  width: 20%;
+  margin: 5px 0px 0px 5px;
+  padding: 10px 0px;
+  float: left;
+}
+div#submenu ul{
+  margin: 0px 0px 0px 5px;
+  list-style: circle;
+  padding-left: 2em;
+}
+div#submenu p{
+  margin: 0px 10px 10px;
+}
+div#foot {
+  border-top: 1px solid #333333;
+  padding: 0px;
+  text-align: center;
+  clear: both;
+  margin: 0px;
+}
+div#foot p{
+  margin: 5px 0px;
+}
+h2 {
+  margin: 20px 0px 10px 20px;
+}
+h3 {
+  margin: 5px 0px 5px 22px;
+}
+h4 {
+  margin: 5px 0px 5px 25px;
+}
+strong {
+  color: #CC3333;
+}
+dl {
+  margin: 0px 0px 50px 40px;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 10px;
+}
 .note {
   font-size:11px;
 }

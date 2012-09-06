@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+    <title>Huahin Framework</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+  <head>
+
+  <body>
+    <div id="page">
+      <div id="head">
+        <h1>Huahin Framework</h1>
+      </div>
+
+      <!-- menu -->
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><div id="currentmenu">Core</div></li>
+          <li><a href="unit.html">Unit</a></li>
+          <li><a href="manager.html">Manager</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="examples.html">Examples</a></li>
+        </ul>
+      </div>
+
+      <!-- submenu -->
+      <div id="submenu">
+        <ul>
+          <li><a href="/huahin-core/">Huahin Core</a></li>
+          <li><a href="/core/docs/0.1.2/api/">API</a></li>
+        </ul>
+      </div>
+
+      <!-- main -->
+      <div id="main">
+        <!-- Huahin Core -->
+        <h2>Huahin Core</h2>
+        <p>Huahin Framework Core can be implemented in a simple MapReduce application.
+        Huahin Core can to develop a flexible native MapReduce.
+        Huahin Core are classified into three major components.</p>
+        <ul>
+          <li>SimpleJobTool: Corresponds to the Job and Tool of MapReduce. To manage the Job.</li>
+          <li>Filter: Corresponds to the Mapper of MapReduce. Perform such as filters of the data.</li>
+          <li>Summarizer: Corresponds to the Reducer of MapReduce. Aggregation of data, etc. do.</li>
+        </ul>
+        <p>The base will be developed using these three components.
+        In addition, MapReduce data I/O format has become a Key/Value.
+        Huahin Core is handling in the Record input data, and grouping, sorting, and the value is present in the Record.
+        </p>
+        <p>You can register a job can be more than one tool in a single application by using
+        a component called the Runner, efficient tool to call the job.
+        </p>
+        <p>Now supported are Apache Hadoop 0.20.x, 0.22.x, 1.0.x, distribution CDH3 of Cloudera,
+        Amazon Elastic MapReduce (and later, EMR), MapReduce Version 1 (MRv1).
+        MRv2 YARN is not supported.</p>
+        <p>
+          For more information, see the following site.
+          <ul>
+            <li><a href="/huahin-core/">Huahin Core</a></li>
+            <li><a href="/core/docs/0.1.2/api/">API</a></li>
+          </ul>
+        </p>
+     </div>
+
+      <!-- footer -->
+      <div id="foot">
+        <div class="tex">
+          <p>Copyright &copy; 2012 huahinframework.org</p>
+          <p>Contact <a href="mailto:huahin-framework@googlegroups.com">huahin-framework@googlegroups.com</a> and we’ll help you sort it out.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- google analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32923864-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

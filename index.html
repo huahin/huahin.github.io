@@ -3,177 +3,98 @@
   <head>
     <title>Huahin Framework</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="Content-Style-Type" content="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
   <head>
+
   <body>
-    <div id="out">
+    <div id="page">
       <div id="head">
         <h1>Huahin Framework</h1>
       </div>
+
+      <!-- menu -->
+      <div id="menu">
+        <ul>
+          <li><div id="currentmenu">TOP</div></li>
+          <li><a href="core.html">Core</a></li>
+          <li><a href="unit.html">Unit</a></li>
+          <li><a href="manager.html">Manager</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="examples.html">Examples</a></li>
+        </ul>
+      </div>
+
+      <!-- submenu -->
+      <div id="submenu">
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="http://huahinframework.blogspot.com/" target="_blank">blog</a></li>
+        </ul>
+      </div>
+
+      <!-- main -->
       <div id="main">
-        <div id="block">
-          <!-- Overview -->
-          <h2>Overview</h2>
-          <div class="tex">
-            <p>Huahin Framework is a framework for development to simplify the Hadoop MapReduce(*1), and manage the Hadoop MapReduce Job.</p>
-            <p>Huahin Framework, make a easy low cost development than normal MapReduce.
-            In addition, Huahin Framework is to develop a flexible native MapReduce purpose, and Pig and Hive are different.</p>
-            <p>Hive and Pig is sufficient when performing simple data formatting and aggregate.
-            However, if an attempt is made to a difficult process, you will need to write a native MapReduce.
-            MapReduce is not easy developing, and cost of development and test  is high.</p>
-            <p>Huahin Framework has been development in Java to wrap MapReduce.
-            Therefore, If you want to do the lack of features and enhancements, you can also develop native MapReduce.</p>
-            <hr/>
-            <div class="note">
-              *1 <a href="http://hadoop.apache.org/" target="_blank" class="note">Apache Hadoop</a>
-            </div>
-          </div>
+        <!-- Overview -->
+        <h2><a name="overview" id="overview">Overview</a></h2>
+        <p>Huahin Framework is a framework for development to simplify the Hadoop MapReduce(*1), and manage the Hadoop MapReduce Job.</p>
+        <p>Huahin Framework, make a easy low cost development than normal MapReduce.
+        In addition, Huahin Framework is to develop a flexible native MapReduce purpose, and Pig and Hive are different.</p>
+        <p>Hive and Pig is sufficient when performing simple data formatting and aggregate.
+        However, if an attempt is made to a difficult process, you will need to write a native MapReduce.
+        MapReduce is not easy developing, and cost of development and test  is high.</p>
+        <p>Huahin Framework has been development in Java to wrap MapReduce.
+        Therefore, If you want to do the lack of features and enhancements, you can also develop native MapReduce.</p>
 
-          <!-- Architecture -->
-          <h2>Architecture</h2>
-          <div class="tex">
-            <p>Huahin Framework is a collective term for the framework for processing MapReduce with a focus on Core.
-            Huahin Framework is composed of product Core, Unit, and Manager.</p>
-            <p>The following figure shows the configuration of each product.
-            Huahin Framework has been configured to run on (MapReduce mainly) Hadoop.</p>
-            <img src="img/framework.png"/>
-          </div>
+        <!-- Architecture -->
+        <h2><a name="architecture" id="architecture">Architecture</a></h2>
+        <p>Huahin Framework is a collective term for the framework for processing MapReduce with a focus on Core.
+        Huahin Framework is composed of product Core, Unit, and Manager.</p>
+        <p>The following figure shows the configuration of each product.
+        Huahin Framework has been configured to run on (MapReduce mainly) Hadoop.</p>
+        <center><img src="img/architecture.png"/></center>
 
-          <!-- News -->
-          <h2>News</h2>
-          <div class="tex">
-            <h4>20 Aug, 2012: Release 0.1.2 available</h4>
-            Easily supports the Join.
+        <!-- News -->
+        <h2><a name="news" id="news">News</a></h2>
+        <h4>20 Aug, 2012: Core and Unit Release 0.1.2 available</h4>
+        <p>Easily supports the Join.</p>
+        <ul>
+          <li>
+            Easily supports the Join. However,
+            you must be a size master data appear in the memory of the task.
+          </li>
+        </ul>
+
+        <h4>30 July, 2012: Core and Unit Release 0.1.1 available</h4>
+        <p>Improvement of performances and fix typo.</p>
+        <ul>
+          <li>Introduction of the Combiner(including In-Mapper Combiner)</li>
+          <li>Reducing the number of output bytes.</li>
+          <li>Notice:
             <ul>
-              <li>
-                Easily supports the Join. However,
-                you must be a size master data appear in the memory of the task.
-              </li>
+              <li>Writer package has been changed.</li>
+              <li>Other Fixed a typo.</li>
             </ul>
+          </li>
+        </ul>
 
-            <h4>30 July, 2012: Release 0.1.1 available</h4>
-            Improvement of performances and fix typo.
-            <ul>
-              <li>Introduction of the Combiner(including In-Mapper Combiner)</li>
-              <li>Reducing the number of output bytes.</li>
-              <li>Notice:
-                <ul>
-                  <li>Writer package has been changed.</li>
-                  <li>Other Fixed a typo.</li>
-                </ul>
-              </li>
-            </ul>
+        <h4>28 Jun, 2012: Release 0.1.0 available</h4>
+        <p>This is the first version.</p>
 
-            <h4>28 Jun, 2012: Release 0.1.0 available</h4>
-            This is the first version.
-          </div>
+        <hr/>
+        <!-- note -->
+        <div class="note">
+          *1 <a href="http://hadoop.apache.org/" target="_blank" class="note">Apache Hadoop</a>
+        </div>
+     </div>
 
-          <!-- Huahin Core -->
-          <h2>blog</h2>
-          <div class="tex">
-            <a href="http://huahinframework.blogspot.jp/" target="_blank">Huahin Framework Blog</a>
-          </div>
-
-          <!-- Huahin Core -->
-          <h2>Huahin Core</h2>
-          <div class="tex">
-            <p>Huahin Framework Core can be implemented in a simple MapReduce application.
-            Huahin Core can to develop a flexible native MapReduce.
-            Huahin Core are classified into three major components.</p>
-            <li>SimpleJobTool: Corresponds to the Job and Tool of MapReduce. To manage the Job.</li>
-            <li>Filter: Corresponds to the Mapper of MapReduce. Perform such as filters of the data.</li>
-            <li>Summarizer: Corresponds to the Reducer of MapReduce. Aggregation of data, etc. do.</li>
-            <p>The base will be developed using these three components.
-            In addition, MapReduce data I/O format has become a Key/Value.
-            Huahin Core is handling in the Record input data, and grouping, sorting, and the value is present in the Record.
-            </p>
-            <p>You can register a job can be more than one tool in a single application by using
-            a component called the Runner, efficient tool to call the job.
-            </p>
-            <p>Now supported are Apache Hadoop 0.20.x, 0.22.x, 1.0.x, distribution CDH3 of Cloudera,
-            Amazon Elastic MapReduce (and later, EMR), MapReduce Version 1 (MRv1).
-            MRv2 YARN is not supported.</p>
-            <p>
-              For more information, see the following site.
-              <li><a href="/huahin-core/">Huahin Core</a></li>
-              <li><a href="/core/docs/0.1.2/api/">API</a></li>
-            </p>
-          </div>
-
-          <!-- Huahin Unit -->
-          <h2>Huahin Unit</h2>
-          <div class="tex">
-            <p>Huahin Unit is a test driver to test the Huahin Core.
-            Driver is based on JUnit (system v4) and the MRUnit, has become a test driver that specializes in Huahin Core,
-            you can do a simple test than using a normal MRUnit.
-            Are classified into three drivers also Huahin Unit.</p>
-            <li>JobDriver: Driver to test the SimpleJobTool.</li>
-            <li>FilterDriver: Driver to test the Filter.</li>
-            <li>SummarizerDriver: Driver to test the SummarizerDriver.</li>
-            <p>
-              For more information, see the following site.
-              <li><a href="/huahin-unit/">Huahin Unit</a></li>
-              <li><a href="/unit/docs/0.1.2/api/">API</a></li>
-            </p>
-          </div>
-
-          <!-- Huahin Manager -->
-          <h2>Huahin Manager</h2>
-          <div class="tex">
-            <p>Huahin Manager REST API is replaced with the Hadoop command in products for managing MapReduce Job.
-            It also has its own queue management and a different work queue of Hadoop.
-            If you select a scheduler in the Hadoop Fair Scheduler, you can limit the number of Job can run simultaneously.
-            The main function is as follows:</p>
-            <li>Get job list.</li>
-            <li>Get job status.</li>
-            <li>Get job detail.</li>
-            <li>Kill job</li>
-            <li>Register job</li>
-            <li>Get queue list.</li>
-            <li>Get run queue statuses.</li>
-            <li>Kill queue for ID.</li>
-            <p>Now supported are Apache Hadoop 0.20.x, 0.22.x, 1.0.x, distribution CDH3 of Cloudera, MapReduce Version 1 (MRv1).</p>
-            <p>Note that the package of Apache and Cloudera is different in each package.</p>
-            <p>EMR with respect to the registration of Job, with respect to queue management is not supported (not used).
-            Now, the execution of the Job (including continuous run), reference can be done in the EMR.
-            To Kill the Job will terminate the EMR itself.
-            For example, you must terminate the EMR if I start the Job by mistake, or wait for the end of the Job.
-            (Log in to the master that instance, you can Kill the Job)
-            You would in vain if you start the dozens,  would cause the cost.
-            Kill the Job You can use the REST API of Huahin Manager.</p>
-            <p>
-              For more information, see the following site.<br/>
-              <a href="/huahin-manager/">Huahin Manager</a>
-            </p>
-            <hr/>
-            <div class="note">
-              *2 Because there is a difference in the version of (*3) HDFS<br/>
-              *3 <a href="http://hadoop.apache.org/hdfs/" target="_blank" class="note">HDFS</a>
-            </div>
-          </div>
-
-          <!-- Huahin Examples -->
-          <h2>Huahin Examples</h2>
-          <div class="tex">
-            <p>Huahin Examples is an example run using the Huahin Core.
-            Equipped with the example of several.
-            Perform the development of applications with reference to this example.
-            Example that are currently registered are as follows.
-            Example that is registered, is an application to manipulate all the Web log.</p>
-            <li>Deta Sort: Get the 10 most recent at the specified URL.</li>
-            <li>Path Ranking: Get the PV and UU of page for Top 50 by data.</li>
-            <li>User Ranking: Get the user ranking of each page for Top 3.</li>
-            <p>
-              For more information, see the following site.<br/>
-              <a href="http://github.com/huahin/huahin-examples/">Huahin Examples</a>
-            </p>
-          </div>
-
-          <!-- footer -->
-          <h2>Support or Contact</h2>
-          <div class="tex">
-            Contact <a href="mailto:huahin-framework@googlegroups.com">huahin-framework@googlegroups.com</a> and we’ll help you sort it out.
-          </div>
+      <!-- footer -->
+      <div id="foot">
+        <div class="tex">
+          <p>Copyright &copy; 2012 huahinframework.org</p>
+          <p>Contact <a href="mailto:huahin-framework@googlegroups.com">huahin-framework@googlegroups.com</a> and we’ll help you sort it out.</p>
         </div>
       </div>
     </div>
