@@ -20,7 +20,10 @@ div#head {
   margin:0 auto 0 auto;
   background-color: #245386;
 }
-#head h1 {
+div#head a{
+  text-decoration: none;
+}
+#head h1{
   padding:30px;
   margin:0px;
   font-size:30px;
@@ -65,10 +68,10 @@ div#main {
   float: left;
   border-right: 1px solid #CCCCCC;
 }
-div#main p {
+div#main p{
   margin: 0px 0px 20px 40px;
 }
-div#main ul {
+div#main ul{
   margin-left: 60px;
   margin-bottom: 1em;
   margin-right: 30px;
