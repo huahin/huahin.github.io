@@ -20,39 +20,44 @@
           <li><a href="core.html">Core</a></li>
           <li><a href="unit.html">Unit</a></li>
           <li><a href="manager.html">Manager</a></li>
-          <li><a href="emanager.html">EManager</a></li>
+          <li><div id="currentmenu">EManager</div></li>
           <li><a href="tools.html">Tools</a></li>
-          <li><div id="currentmenu">Examples</div></li>
+          <li><a href="examples.html">Examples</a></li>
         </ul>
       </div>
 
       <!-- submenu -->
       <div id="submenu">
         <ul>
-          <li><a href="http://github.com/huahin/huahin-examples/">Huahin Examples</a></li>
+          <li><a href="/huahin-emanager/">Huahin EManager</a></li>
         </ul>
       </div>
 
       <!-- main -->
       <div id="main">
-        <!-- Huahin Examples -->
-        <h2>Huahin Examples</h2>
-        <p>Huahin Examples is an example run using the Huahin Core.
-        Equipped with the example of several.
-        Perform the development of applications with reference to this example.
-        Example that are currently registered are as follows.
-        Example that is registered, is an application to manipulate all the Web log.</p>
+        <!-- Huahin EManager -->
+        <h2>Huahin EManager</h2>
+        <p>Huahin EManager REST API is replaced with the Amazonn Elastic MapReduce(EMR) API in products for managing EMR Job Flows.
+        It also has its own queue management and a different work queue of EMR.
+        EManager can limit the number of clusters that can be run simultaneously.
+        Also, EManager is optimized to reduce the cost and start the instance.
+        The main function is as follows:</p>
         <ul>
-          <li>Deta Sort: Get the 10 most recent at the specified URL.</li>
-          <li>Path Ranking: Get the PV and UU of page for Top 50 by data.</li>
-          <li>User Ranking: Get the user ranking of each page for Top 3.</li>
-          <li>and more</li>
+          <li>Get job flow list.</li>
+          <li>Get describe job flow.</li>
+          <li>Kill step for step name.</li>
+          <li>Get queue list.</li>
+          <li>Get describe queue.</li>
+          <li>Register job.(Hive, Pig, Streaming and Custome JAR)</li>
         </ul>
+        <p>Kill of step has been achieved by using the Huahin Manager.
+        Refer to the <a href="manager.html">Huahin Manager</a> for more information.</p>
         <p>
           For more information, see the following site.<br/>
-          <a href="http://github.com/huahin/huahin-examples/">Huahin Examples</a>
+          <a href="/huahin-emanager/">Huahin EManager</a>
         </p>
-     </div>
+        <hr/>
+      </div>
 
       <!-- footer -->
       <div id="foot">
